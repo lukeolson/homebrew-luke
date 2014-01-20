@@ -16,4 +16,13 @@ class Petsc < Formula
     system "make"
     system "make install"
   end
+
+  
+  def caveats; <<-EOS.undent
+    Finish with
+
+      brew link libmesh
+
+    EOS
+  end
 end
